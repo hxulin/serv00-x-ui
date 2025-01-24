@@ -19,6 +19,12 @@
 bash <(curl -Ls https://raw.githubusercontent.com/hxulin/serv00-x-ui/main/install.sh)
 ```
 
+## 指定版本号安装
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/hxulin/serv00-x-ui/main/install.sh) v0.3.2
+```
+
 ## 手动安装&升级
 
 1. 首先从 https://github.com/hxulin/serv00-x-ui/releases 下载最新的压缩包，一般选择 `amd64`架构
