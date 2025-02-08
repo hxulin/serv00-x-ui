@@ -64,9 +64,11 @@ install_x-ui() {
     wget --no-check-certificate -O x-ui.sh https://raw.githubusercontent.com/hxulin/serv00-x-ui/main/x-ui.sh
     chmod +x x-ui.sh
     config_after_install
-    echo -e "${green}x-ui v${last_version}${plain} 安装完成，面板已启动"
+    echo -e "${green}x-ui ${last_version}${plain} 安装完成，面板已启动"
+    echo -e ""
     echo 'alias x-ui="/home/'$USER'/x-ui/x-ui.sh"' >> ~/.profile
-    echo "x-ui alias 添加到 ~/.profile 文件完成，重新登录 SSH 终端可直接使用 x-ui 命令"
+    echo "x-ui alias 添加到 ~/.profile 文件完成"
+    echo -e "${yellow}重新登录 SSH 终端可直接使用 x-ui 命令${plain}"
     echo -e ""
     echo -e "x-ui 管理脚本使用方法: "
     echo -e "----------------------------------------------"
