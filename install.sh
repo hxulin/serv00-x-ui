@@ -65,6 +65,8 @@ install_x-ui() {
     chmod +x x-ui.sh
     config_after_install
     echo -e "${green}x-ui v${last_version}${plain} 安装完成，面板已启动"
+    echo 'alias x-ui="/home/'$USER'/x-ui/x-ui.sh"' >> ~/.profile
+    echo "x-ui alias 添加到 ~/.profile 文件完成，重新登录 SSH 终端可直接使用 x-ui 命令"
     echo -e ""
     echo -e "x-ui 管理脚本使用方法: "
     echo -e "----------------------------------------------"
