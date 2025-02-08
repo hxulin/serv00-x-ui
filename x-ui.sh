@@ -85,6 +85,7 @@ uninstall() {
     fi
 
     crontab -l | grep -v 'x-ui run' | crontab -
+    grep -v '^alias x-ui="/home/'$USER'/x-ui/x-ui.sh"$' ~/.profile > ~/.profile.tmp && mv ~/.profile.tmp ~/.profile
     cd ~
     rm -rf x-ui/
 
